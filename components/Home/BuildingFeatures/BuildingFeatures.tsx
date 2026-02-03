@@ -1,3 +1,4 @@
+"use client";
 import SectionHeading from "@/components/Helper/SectionHeading";
 import { buildings } from "@/data/data";
 import React from "react";
