@@ -28,7 +28,7 @@ const Nav = () => {
 
   return (
     <div
-      className={`fixed ${navBg ? "bg-gray-800" : ""} h-[10vh] z-[100] w-full transition-all duration-200`}
+      className={`fixed ${navBg ? "bg-gray-800" : ""} h-[10vh] z-[100] w-full transition-all duration-200 bg-gray-900`}
     >
       <div className="flex items-center justify-between h-full w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         <div className="flex items-center space-x-2">
