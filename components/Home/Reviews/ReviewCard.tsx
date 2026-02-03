@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { FaQuestionCircle, FaQuoteRight, FaStar } from "react-icons/fa";
+import { FaQuoteRight, FaStar } from "react-icons/fa";
 
 type Props = {
   review: {

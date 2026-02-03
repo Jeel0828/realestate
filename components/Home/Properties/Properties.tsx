@@ -10,7 +10,7 @@ const Properties = () => {
       <div className="w-[80%] mx-auto">
         <SectionHeading heading="Discover Our Properties" />
         <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-center ">
-          {properties.map((proprty: any) => {
+          {properties.map((proprty) => {
             return (
               <div key={proprty.id}>
                 <PropertyCard property={proprty} />
