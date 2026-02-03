@@ -1,24 +1,22 @@
 "use client";
+import { navLinks } from "@/constant/constant";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
+import { HiBars3BottomRight } from "react-icons/hi2";
 
-const NavLink = [
-  { id: 1, url: "#", label: "Home" },
-  { id: 2, url: "#", label: "Listing" },
-  { id: 3, url: "#", label: "Property" },
-  { id: 4, url: "#", label: "Blog" },
-  { id: 5, url: "#", label: "Contact" },
-];
+type Props = {
+  openNav: () => void;
+};
 
-const Nav = () => {
+const Nav = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
 
   useEffect(() => {
     const handler = () => {
-      if (window.screenY >= 90) setNavBg(true);
-      if (window.screenX < 90) setNavBg(false);
+      if (window.scrollY >= 90) setNavBg(true);
+      if (window.scrollY < 90) setNavBg(false);
     };
     window.addEventListener("scroll", handler);
     return () => {
@@ -28,7 +26,7 @@ const Nav = () => {
 
   return (
     <div
-      className={`fixed ${navBg ? "bg-gray-800" : ""} h-[10vh] z-[100] w-full transition-all duration-200 bg-gray-900`}
+      className={`fixed ${navBg ? "bg-gray-800" : "bg-transparent"} h-[10vh] z-[100] w-full transition-all duration-200`}
     >
       <div className="flex items-center justify-between h-full w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         <div className="flex items-center space-x-2">
@@ -41,7 +39,7 @@ const Nav = () => {
         </div>
 
         <div className="lg:flex items-center space-x-14 text-white hidden">
-          {NavLink.map((navlink) => {
+          {navLinks.map((navlink) => {
             return (
               <Link key={navlink.id} href={navlink.url}>
                 <p className="sont-medium hover:text-yellow-300">
@@ -57,6 +55,10 @@ const Nav = () => {
             <FaUserCircle className="w-5 h-5" />
             <p className="font-bold textr-xs sm:text-base">Login / Register</p>
           </div>
+          <HiBars3BottomRight
+            onClick={openNav}
+            className="text-white sm:w-8 sm:h-8 w-6 h-6 cursor-pointer lg:hidden"
+          />
         </div>
       </div>
     </div>
