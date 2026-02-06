@@ -7,7 +7,7 @@ export const navLinks = [
   },
   {
     id: 2,
-    url: "/",
+    url: "/listing",
     label: "Listing",
   },
   {
