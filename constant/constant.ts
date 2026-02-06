@@ -1,27 +1,28 @@
+// constant/constant.ts
 export const navLinks = [
   {
     id: 1,
-    url: "#",
+    url: "/",
     label: "Home",
   },
   {
     id: 2,
-    url: "#",
+    url: "/",
     label: "Listing",
   },
   {
     id: 3,
-    url: "#",
+    url: "/property",
     label: "Property",
   },
   {
     id: 4,
-    url: "#",
+    url: "/blog",
     label: "Blog",
   },
   {
     id: 5,
-    url: "#",
+    url: "/contact",
     label: "Contact",
   },
 ];
