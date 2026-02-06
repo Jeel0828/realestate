@@ -8,15 +8,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero/Hero";
 
-interface Blog {
-    id: number;
-    date: string;
-    comment: string;
-    title: string;
-    shortDescription: string;
-    image: string;
-}
-
 const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
     const blogId = parseInt(params.id);
     const blog = blogs.find((b) => b.id === blogId);

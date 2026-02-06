@@ -6,19 +6,8 @@ import { properties } from "@/data/data";
 import { FaBed, FaBath, FaSquare } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import Link from "next/link";
-import { motion } from "framer-motion"; // Assuming framer-motion is installed: npm install framer-motion
+import { motion } from "framer-motion";
 import Hero from "@/components/Hero/Hero";
-
-interface Property {
-    id: number;
-    propertyName: string;
-    location: string;
-    bedrooms: number;
-    bathrooms: number;
-    size: number;
-    price: number;
-    imageUrl: string;
-}
 
 const PropertyDetailsPage = ({ params }: { params: { id: string } }) => {
     const propertyId = parseInt(params.id);
