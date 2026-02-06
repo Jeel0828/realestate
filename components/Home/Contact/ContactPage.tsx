@@ -92,8 +92,9 @@ const ContactPage = () => {
                                 Get in Touch
                             </h1>
                             <p className="text-gray-600 text-lg leading-relaxed" style={{ letterSpacing: "0.3px" }}>
-                                We'd love to hear from you! Whether you have a question about our services,
-                                want to schedule a viewing, or just want to say hello, we're here to help.
+                                {"We'd love to hear from you! Whether you have a question about our services,"}
+                                <br />
+                                {"want to schedule a viewing, or just want to say hello, we're here to help."}
                             </p>
                         </div>
 
