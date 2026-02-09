@@ -12,7 +12,6 @@ import {
   ChevronRight,
   ChevronLeft,
   X,
-  Calendar,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -21,8 +20,6 @@ import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaSquare } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";

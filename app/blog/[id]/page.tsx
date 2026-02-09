@@ -6,7 +6,6 @@ import { BiCalendar, BiMessage, BiUser } from "react-icons/bi";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Hero from "@/components/Hero/Hero";
 
 const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
     const blogId = parseInt(params.id);
