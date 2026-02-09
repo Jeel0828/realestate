@@ -58,7 +58,6 @@ const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
 
     return (
         <>
-            <Hero />
             <motion.div
                 className="min-h-screen bg-gradient-to-b from-gray-100 to-white py-12 md:py-20"
                 initial="hidden"
@@ -68,7 +67,7 @@ const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
                 <div className="w-[80%] mx-auto">
                     <motion.div variants={childVariants}>
                         <Link
-                            href="/#blog"
+                            href="/blog"
                             className="inline-flex items-center text-rose-600 hover:text-black mb-6 mt-8 transition-colors duration-300 tracking-wider"
                         >
                             ← Back to Blog

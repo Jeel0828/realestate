@@ -55,7 +55,9 @@ const PropertyCard = ({ property }: Props) => {
           <div className="flex items-center justify-between mt-6 w-full lg:w-[80%]">
             <div className="flex items-center space-x-2">
               <FaBath className="text-rose-600" />
-              <p className="text-xs text-gray-600">{property.bathrooms} Baths</p>
+              <p className="text-xs text-gray-600">
+                {property.bathrooms} Baths
+              </p>
             </div>
           </div>
           <div className="flex items-center justify-between mt-6 w-full lg:w-[80%]">
